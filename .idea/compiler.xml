@@ -23,10 +23,11 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="DatabaseCopier" />
+        <module name="DbCloner" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DatabaseCopier" target="1.8" />
+      <module name="DbCloner" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

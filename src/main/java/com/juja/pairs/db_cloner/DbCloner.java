@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class DatabaseCopier {
+public class DbCloner {
 
     public static void main(String[] args) {
         int numberOfDatabases = 2;
