@@ -16,7 +16,8 @@ public class FileReader {
 
         try (BufferedReader in = new BufferedReader(new java.io.FileReader(filePath))){
             while ((readLine = in.readLine()) != null){
-                builder.append(readLine).append("\n");
+                String separator = System.lineSeparator();
+                builder.append(readLine).append(separator);
             }
           } catch (IOException io){
             io.printStackTrace();
