@@ -24,7 +24,7 @@ public class ConnectionParameters {
         ConnectionParameters[] params=new ConnectionParameters[dbCount];
         FileReader reader = new FileReader(fileName);
         String fileContent = reader.read();
-        String [] paramArray = fileContent.split("\\n");
+        String [] paramArray = fileContent.split(FileReader.SEPARATOR);
         for (int numDb = 0; numDb <dbCount ; numDb++) {
             String dbType = paramArray[numDbType+(numDb*parametersNumber)];
             String ipHost = paramArray[numIpHost+(numDb*parametersNumber)];
